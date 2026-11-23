@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Perfil del navegador que crea el scraper (cookies y sesion del sitio)
+.perfil_navegador/
+
+# Editor y sistema
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Datos crudos de Portal Inmobiliario: el sitio prohibe reproducir su contenido.
+# Mientras el repositorio sea PUBLICO no se suben. Cuando sea PRIVADO, borrar estas dos lineas.
+data/raw/*.csv
+data/raw/*.txt
