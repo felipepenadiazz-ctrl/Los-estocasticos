@@ -1,0 +1,523 @@
+﻿id_aviso,problema,detalle
+MLC4386787732,sin_superficie,
+MLC4603134252,sin_superficie,
+MLC2268767105,sin_superficie,
+MLC4636871516,sin_superficie,
+MLC4390149838,sin_superficie,
+MLC2011943815,sin_superficie,
+MLC2154957653,sin_superficie,
+MLC4422456348,sin_superficie,
+MLC4578391116,sin_superficie,
+MLC4610664002,sin_superficie,
+MLC4526095924,sin_superficie,
+MLC2445403637,sin_superficie,
+MLC4714894070,sin_superficie,
+MLC2416015527,sin_superficie,
+MLC4693076688,sin_superficie,
+MLC4671039168,superficie_fuera_rango,util=4 total=50
+MLC2408986653,superficie_fuera_rango,util=5 total=30
+MLC2392268023,superficie_fuera_rango,util=5280 total=5280
+MLC2364319555,superficie_fuera_rango,util=627 total=671
+MLC2364504057,superficie_fuera_rango,util=6032 total=6032
+MLC2364319577,superficie_fuera_rango,util=6014 total=6392
+MLC2004399733,superficie_fuera_rango,util=702 total=392
+MLC2364317789,superficie_fuera_rango,util=7 total=42
+MLC4591220558,superficie_fuera_rango,util=1880 total=118
+MLC4528519870,superficie_fuera_rango,util=999 total=999
+MLC2185025141,superficie_fuera_rango,util=1115 total=120
+MLC4422463002,superficie_fuera_rango,util= total=3
+MLC2412725093,superficie_fuera_rango,util=5742 total=6283
+MLC4653407704,superficie_fuera_rango,util=6450 total=6470
+MLC4160976152,superficie_fuera_rango,util=689 total=689
+MLC4694876256,superficie_fuera_rango,util= total=1350
+MLC4707357654,superficie_fuera_rango,util=1 total=140
+MLC4687020780,superficie_fuera_rango,util=850 total=850
+MLC4646470930,superficie_fuera_rango,util=10 total=110
+MLC4601300972,superficie_no_positiva,util=26 total=-3
+MLC4700566642,superficie_no_positiva,util=45 total=-1
+MLC4650505694,bodegas_fuera_rango,55
+MLC2340708151,bodegas_fuera_rango,242085
+MLC2327795831,bodegas_fuera_rango,242085
+MLC2327744021,bodegas_fuera_rango,242085
+MLC2327821911,bodegas_fuera_rango,242085
+MLC2327757197,bodegas_fuera_rango,242085
+MLC2163661727,bodegas_fuera_rango,80
+MLC2421515837,bodegas_fuera_rango,-54
+MLC2421477117,bodegas_fuera_rango,-16
+MLC4686745686,bodegas_fuera_rango,242085
+MLC2211365491,estacionamientos_fuera_rango,44
+MLC2434747385,estacionamientos_fuera_rango,18
+MLC4234022114,total_mucho_mayor_util,util=47 total=4621
+MLC4671039168,total_mucho_mayor_util,util=4 total=50
+MLC2408986653,total_mucho_mayor_util,util=5 total=30
+MLC2364317789,total_mucho_mayor_util,util=7 total=42
+MLC4540021462,total_mucho_mayor_util,util=51 total=519
+MLC4707357654,total_mucho_mayor_util,util=1 total=140
+MLC4646470930,total_mucho_mayor_util,util=10 total=110
+MLC4443903190,util_mayor_total,util=90 total=85
+MLC4427322974,util_mayor_total,util=58 total=55
+MLC4223499464,util_mayor_total,util=313 total=261
+MLC2068823075,util_mayor_total,util=37 total=35
+MLC4675565544,util_mayor_total,util=37.66 total=34.46
+MLC4675577142,util_mayor_total,util=37.66 total=34.46
+MLC2004399733,util_mayor_total,util=702 total=392
+MLC4601300972,util_mayor_total,util=26 total=-3
+MLC2335994161,util_mayor_total,util=34 total=31
+MLC4155496888,util_mayor_total,util=41 total=39
+MLC2324076277,util_mayor_total,util=55 total=50
+MLC4490117508,util_mayor_total,util=80 total=74
+MLC4460683634,util_mayor_total,util=89 total=76
+MLC2035107343,util_mayor_total,util=99.39 total=93.39
+MLC2396201111,util_mayor_total,util=50 total=45
+MLC4168105412,util_mayor_total,util=70 total=55
+MLC4591220558,util_mayor_total,util=1880 total=118
+MLC2007745897,util_mayor_total,util=75 total=70
+MLC4479067936,util_mayor_total,util=75 total=70
+MLC2185025141,util_mayor_total,util=1115 total=120
+MLC4416377322,util_mayor_total,util=100 total=93
+MLC4447122144,util_mayor_total,util=45 total=1
+MLC4664450942,util_mayor_total,util=40 total=37
+MLC4625277576,util_mayor_total,util=310 total=295
+MLC4112425086,util_mayor_total,util=90 total=1
+MLC2164057375,util_mayor_total,util=118 total=110
+MLC4710203376,util_mayor_total,util=42 total=37
+MLC4682187494,util_mayor_total,util=50 total=46
+MLC4698569008,util_mayor_total,util=92 total=61
+MLC4700566642,util_mayor_total,util=45 total=-1
+MLC4715724872,util_mayor_total,util=84 total=77
+MLC2369379017,util_mayor_total,util=88 total=82
+MLC4682244578,util_mayor_total,util=49 total=46
+MLC2367860483,util_mayor_total,util=77 total=73
+MLC4704932584,util_mayor_total,util=60 total=57
+MLC4714293296,util_mayor_total,util=104 total=95
+MLC2004399733,dormitorios_fuera_rango,26
+MLC4625277576,dormitorios_fuera_rango,9
+MLC4544532586,dormitorios_fuera_rango,33
+MLC4694876256,dormitorios_fuera_rango,51
+MLC2403624473,banos_fuera_rango,0
+MLC2004399733,banos_fuera_rango,26
+MLC2406246569,banos_fuera_rango,0
+MLC2410694841,banos_fuera_rango,0
+MLC4671937410,banos_fuera_rango,0
+MLC4694876256,banos_fuera_rango,55
+MLC2445403637,banos_fuera_rango,0
+MLC4687020780,banos_fuera_rango,0
+MLC4673411632,piso_mayor_que_edificio,305 > 24
+MLC4671106422,piso_mayor_que_edificio,4 > 1
+MLC4439471384,piso_mayor_que_edificio,9 > 1
+MLC4042644956,piso_mayor_que_edificio,2 > 1
+MLC4071296916,piso_mayor_que_edificio,101 > 5
+MLC2211365485,piso_mayor_que_edificio,10 > 1
+MLC2211365489,piso_mayor_que_edificio,7 > 1
+MLC4439742516,piso_mayor_que_edificio,17 > 1
+MLC2211365439,piso_mayor_que_edificio,8 > 1
+MLC4439471506,piso_mayor_que_edificio,2 > 1
+MLC4439742522,piso_mayor_que_edificio,2 > 1
+MLC4439471438,piso_mayor_que_edificio,6 > 1
+MLC4569327004,piso_mayor_que_edificio,2 > 1
+MLC4439742478,piso_mayor_que_edificio,15 > 1
+MLC4439742572,piso_mayor_que_edificio,2 > 1
+MLC4502088514,piso_mayor_que_edificio,4 > 2
+MLC2063337817,piso_mayor_que_edificio,4 > 2
+MLC2187463665,piso_mayor_que_edificio,13 > 1
+MLC2231907097,piso_mayor_que_edificio,3 > 1
+MLC2407952947,piso_mayor_que_edificio,15 > 1
+MLC4675579824,piso_mayor_que_edificio,4 > 1
+MLC4675564454,piso_mayor_que_edificio,6 > 1
+MLC4373699638,piso_mayor_que_edificio,4 > 3
+MLC4477188672,piso_mayor_que_edificio,6 > 2
+MLC2059574697,piso_mayor_que_edificio,3 > 1
+MLC4085091366,piso_mayor_que_edificio,50 > 2
+MLC4501530762,piso_mayor_que_edificio,5 > 2
+MLC4098301148,piso_mayor_que_edificio,8 > 7
+MLC4179341438,piso_mayor_que_edificio,3 > 1
+MLC4099822090,piso_mayor_que_edificio,17 > 1
+MLC2105213497,piso_mayor_que_edificio,6 > 1
+MLC4373699546,piso_mayor_que_edificio,4 > 1
+MLC2344349923,piso_mayor_que_edificio,3 > 1
+MLC4497576564,piso_mayor_que_edificio,10 > 1
+MLC2053548921,piso_mayor_que_edificio,4 > 1
+MLC4498792722,piso_mayor_que_edificio,14 > 1
+MLC4111969072,piso_mayor_que_edificio,6 > 2
+MLC2228913627,piso_mayor_que_edificio,4 > 1
+MLC4109494172,piso_mayor_que_edificio,5 > 1
+MLC4443881944,piso_mayor_que_edificio,7 > 1
+MLC4627019842,piso_mayor_que_edificio,5 > 1
+MLC4581258862,piso_mayor_que_edificio,2385 > 5
+MLC4450265364,piso_mayor_que_edificio,6 > 1
+MLC2016688327,piso_mayor_que_edificio,111 > 13
+MLC2211365483,piso_mayor_que_edificio,8 > 2
+MLC4439471492,piso_mayor_que_edificio,2 > 1
+MLC4439742582,piso_mayor_que_edificio,10 > 1
+MLC4439742438,piso_mayor_que_edificio,6 > 1
+MLC2211365543,piso_mayor_que_edificio,9 > 1
+MLC2211365441,piso_mayor_que_edificio,9 > 1
+MLC4587852588,piso_mayor_que_edificio,420 > 12
+MLC2408944365,piso_mayor_que_edificio,5 > 1
+MLC2150342835,piso_mayor_que_edificio,10 > 1
+MLC2327795831,piso_mayor_que_edificio,501 > 6
+MLC2327744021,piso_mayor_que_edificio,306 > 10
+MLC4576383084,piso_mayor_que_edificio,8 > 1
+MLC2259887549,piso_mayor_que_edificio,6 > 1
+MLC4064366438,piso_mayor_que_edificio,7 > 1
+MLC2265338339,piso_mayor_que_edificio,10 > 1
+MLC2385023101,piso_mayor_que_edificio,16 > 1
+MLC4362223898,piso_mayor_que_edificio,4 > 1
+MLC4146275432,piso_mayor_que_edificio,4 > 1
+MLC4088010488,piso_mayor_que_edificio,4 > 1
+MLC2171671257,piso_mayor_que_edificio,2 > 1
+MLC2130627403,piso_mayor_que_edificio,3 > 1
+MLC4146275444,piso_mayor_que_edificio,9 > 1
+MLC2384635677,piso_mayor_que_edificio,11 > 1
+MLC2267450727,piso_mayor_que_edificio,205 > 12
+MLC4410908366,piso_mayor_que_edificio,4 > 1
+MLC2391566823,piso_mayor_que_edificio,110 > 5
+MLC2208870029,piso_mayor_que_edificio,3 > 1
+MLC4419213096,piso_mayor_que_edificio,4 > 3
+MLC2394051027,piso_mayor_que_edificio,405 > 6
+MLC2261219665,piso_mayor_que_edificio,5 > 1
+MLC2324134941,piso_mayor_que_edificio,3 > 1
+MLC2408944321,piso_mayor_que_edificio,4 > 1
+MLC4480641398,piso_mayor_que_edificio,6 > 1
+MLC4682540384,piso_mayor_que_edificio,9 > 1
+MLC2447793921,piso_mayor_que_edificio,17 > 1
+MLC4679775018,piso_mayor_que_edificio,2 > 1
+MLC2390818295,piso_mayor_que_edificio,2 > 1
+MLC4701924888,piso_mayor_que_edificio,2 > 1
+MLC4701924880,piso_mayor_que_edificio,3 > 2
+MLC4701924882,piso_mayor_que_edificio,12 > 1
+MLC4701951204,piso_mayor_que_edificio,17 > 1
+MLC4683852758,piso_mayor_que_edificio,3 > 1
+MLC4683801866,piso_mayor_que_edificio,202 > 4
+MLC4724802154,piso_mayor_que_edificio,7 > 1
+MLC4721337804,piso_mayor_que_edificio,9 > 1
+MLC4688821574,piso_mayor_que_edificio,10 > 1
+MLC4678583754,piso_mayor_que_edificio,3 > 2
+MLC2414135209,piso_mayor_que_edificio,4 > 2
+MLC2451882083,piso_mayor_que_edificio,5 > 1
+MLC2438070625,piso_mayor_que_edificio,4 > 1
+MLC2447813959,piso_mayor_que_edificio,2 > 1
+MLC2450411819,piso_mayor_que_edificio,4 > 2
+MLC2420366623,piso_mayor_que_edificio,401 > 4
+MLC2451882089,piso_mayor_que_edificio,5 > 1
+MLC4683810670,piso_mayor_que_edificio,8 > 1
+MLC4711032848,piso_mayor_que_edificio,110 > 16
+MLC4701924886,piso_mayor_que_edificio,4 > 1
+MLC2430301633,piso_mayor_que_edificio,6 > 1
+MLC2442255691,piso_mayor_que_edificio,4 > 2
+MLC4702335182,piso_mayor_que_edificio,13 > 12
+MLC4673411632,piso_fuera_rango,305
+MLC4071296916,piso_fuera_rango,101
+MLC4085091366,piso_fuera_rango,50
+MLC4636857770,piso_fuera_rango,204
+MLC4581258862,piso_fuera_rango,2385
+MLC2016688327,piso_fuera_rango,111
+MLC4587852588,piso_fuera_rango,420
+MLC2327795831,piso_fuera_rango,501
+MLC2327744021,piso_fuera_rango,306
+MLC2267450727,piso_fuera_rango,205
+MLC2391566823,piso_fuera_rango,110
+MLC2394051027,piso_fuera_rango,405
+MLC4683801866,piso_fuera_rango,202
+MLC2420366623,piso_fuera_rango,401
+MLC4711032848,piso_fuera_rango,110
+MLC2400633913,antiguedad_fuera_rango,1993
+MLC4654546238,antiguedad_fuera_rango,2026
+MLC2410823361,antiguedad_fuera_rango,2013
+MLC4510764656,antiguedad_fuera_rango,2021
+MLC4093490990,antiguedad_fuera_rango,2014
+MLC4085046592,antiguedad_fuera_rango,2014
+MLC4633937270,antiguedad_fuera_rango,2013
+MLC1973930435,antiguedad_fuera_rango,1957
+MLC2384602827,antiguedad_fuera_rango,2026
+MLC4646516892,antiguedad_fuera_rango,2026
+MLC4259925330,antiguedad_fuera_rango,2017
+MLC2147889497,antiguedad_fuera_rango,2020
+MLC4168116732,antiguedad_fuera_rango,1994
+MLC4615132550,antiguedad_fuera_rango,2010
+MLC2274564393,antiguedad_fuera_rango,2008
+MLC4101804382,antiguedad_fuera_rango,2008
+MLC4631470576,antiguedad_fuera_rango,2011
+MLC2332706507,antiguedad_fuera_rango,2000
+MLC2410680861,antiguedad_fuera_rango,2026
+MLC4087954614,antiguedad_fuera_rango,2020
+MLC4087787806,antiguedad_fuera_rango,2020
+MLC4462298110,antiguedad_fuera_rango,2027
+MLC4414863826,antiguedad_fuera_rango,2010
+MLC4581257564,antiguedad_fuera_rango,2020
+MLC2293360963,antiguedad_fuera_rango,1985
+MLC4638971128,antiguedad_fuera_rango,1990
+MLC4656244718,antiguedad_fuera_rango,2013
+MLC4522141700,antiguedad_fuera_rango,2015
+MLC2303277111,antiguedad_fuera_rango,2013
+MLC2410694841,antiguedad_fuera_rango,2024
+MLC1953782689,antiguedad_fuera_rango,2020
+MLC4267983924,antiguedad_fuera_rango,2000
+MLC4510800174,antiguedad_fuera_rango,2011
+MLC4439471396,antiguedad_fuera_rango,2026
+MLC4134769342,antiguedad_fuera_rango,2012
+MLC4441446014,antiguedad_fuera_rango,2013
+MLC4135263900,antiguedad_fuera_rango,2015
+MLC4101738926,antiguedad_fuera_rango,2020
+MLC2233249599,antiguedad_fuera_rango,2016
+MLC1876650443,antiguedad_fuera_rango,2010
+MLC2303238811,antiguedad_fuera_rango,2020
+MLC1999187201,antiguedad_fuera_rango,2019
+MLC4514978018,antiguedad_fuera_rango,1944
+MLC4585665078,antiguedad_fuera_rango,2020
+MLC4716216296,antiguedad_fuera_rango,1026
+MLC4630802666,antiguedad_fuera_rango,2008
+MLC4050100838,antiguedad_fuera_rango,2019
+MLC4678475702,antiguedad_fuera_rango,1976
+MLC2172804701,antiguedad_fuera_rango,2016
+MLC2423386619,antiguedad_fuera_rango,915
+MLC2413678501,gc_igual_precio,70000000
+MLC4615674986,gc_igual_precio,70000000
+MLC4581258862,gc_igual_precio,81000000
+MLC2413678501,gc_fuera_rango,70000000
+MLC4660805152,gc_fuera_rango,90000000
+MLC4615674986,gc_fuera_rango,70000000
+MLC4581258862,gc_fuera_rango,81000000
+MLC2173129579,duplicado_probable,"grupo -36.8575098,-73.1006471 piso 1"
+MLC2288301763,duplicado_probable,"grupo -36.8332501,-73.0549399 piso 23"
+MLC4026672256,duplicado_probable,"grupo -36.8485842,-73.0959051 piso 10"
+MLC4587870488,duplicado_probable,"grupo -36.861533,-73.0951245 piso 1"
+MLC2327753931,duplicado_probable,"grupo -36.8208829,-73.0563372 piso 4"
+MLC2324108063,duplicado_probable,"grupo -36.8149055,-73.049818 piso 17"
+MLC4665801606,duplicado_probable,"grupo -36.7884707,-73.0332219 piso 1"
+MLC2412702035,duplicado_probable,"grupo -36.8321495,-73.0522734 piso 20"
+MLC4669624174,duplicado_probable,"grupo -36.8149055,-73.049818 piso 17"
+MLC4673411630,duplicado_probable,"grupo -36.8484596,-73.0515468 piso "
+MLC2366639569,duplicado_probable,"grupo -36.8268951,-73.0476533 piso "
+MLC4009583554,duplicado_probable,"grupo -36.8222336,-73.0437332 piso 9"
+MLC1975353619,duplicado_probable,"grupo -36.8316664,-73.0493472 piso 11"
+MLC2112248577,duplicado_probable,"grupo -36.8056119,-73.064663 piso 3"
+MLC1978124485,duplicado_probable,"grupo -36.8277268,-73.042633 piso 4"
+MLC4391520752,duplicado_probable,"grupo -36.8321427,-73.0521867 piso "
+MLC2274594413,duplicado_probable,"grupo -36.8216758,-73.0559144 piso "
+MLC4191178526,duplicado_probable,"grupo -36.8277268,-73.042633 piso 4"
+MLC1999210899,duplicado_probable,"grupo -36.8204017,-73.0374117 piso 8"
+MLC4582726868,duplicado_probable,"grupo -36.8142064,-73.0333608 piso 3"
+MLC4450268692,duplicado_probable,"grupo -36.7921893,-73.0355778 piso 1"
+MLC4622587936,duplicado_probable,"grupo -36.7884707,-73.0332219 piso 1"
+MLC4599773074,duplicado_probable,"grupo -36.8501656,-73.0500852 piso 4"
+MLC4623168510,duplicado_probable,"grupo -36.8497483,-73.0509416 piso 17"
+MLC4610666792,duplicado_probable,"grupo -36.8211612,-73.0431313 piso 7"
+MLC4601299322,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 17"
+MLC2350826283,duplicado_probable,"grupo -36.8314339,-73.0543976 piso "
+MLC4597914350,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 15"
+MLC4646464516,duplicado_probable,"grupo -36.8235306,-73.0460533 piso 11"
+MLC4607440540,duplicado_probable,"grupo -36.8168111,-73.0561151 piso 10"
+MLC2360675941,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 15"
+MLC2317932079,duplicado_probable,"grupo -36.829754,-73.0461118 piso 22"
+MLC4574271096,duplicado_probable,"grupo -36.8253633,-73.0486536 piso 6"
+MLC4483110262,duplicado_probable,"grupo -36.8208829,-73.0563372 piso 4"
+MLC2352131337,duplicado_probable,"grupo -36.8056119,-73.064663 piso "
+MLC2366600685,duplicado_probable,"grupo -36.8500782,-73.0501762 piso "
+MLC3991414586,duplicado_probable,"grupo -36.8484596,-73.0515468 piso "
+MLC3990918080,duplicado_probable,"grupo -36.8484596,-73.0515468 piso "
+MLC4465617232,duplicado_probable,"grupo -36.8213335,-73.0536354 piso 21"
+MLC1683501007,duplicado_probable,"grupo -36.8168111,-73.0561151 piso 5"
+MLC4021082786,duplicado_probable,"grupo -36.8316664,-73.0493472 piso 11"
+MLC2367859929,duplicado_probable,"grupo -36.7795277,-73.0425777 piso 1"
+MLC2354684907,duplicado_probable,"grupo -36.8271127,-73.0443913 piso 5"
+MLC4592636732,duplicado_probable,"grupo -36.812722,-73.0590784 piso 2"
+MLC4623172036,duplicado_probable,"grupo -36.8501656,-73.0500852 piso 4"
+MLC4580118282,duplicado_probable,"grupo -36.826696,-73.0534603 piso 3"
+MLC4617752716,duplicado_probable,"grupo -36.8500782,-73.0501762 piso "
+MLC2366639485,duplicado_probable,"grupo -36.8501656,-73.0500852 piso "
+MLC2366639553,duplicado_probable,"grupo -36.8177868,-73.0545423 piso "
+MLC3902056046,duplicado_probable,"grupo -36.8319421,-73.0592884 piso 5"
+MLC4630802030,duplicado_probable,"grupo -36.8321495,-73.0522734 piso 20"
+MLC2183124691,duplicado_probable,"grupo -36.8227754,-73.0391637 piso 3"
+MLC4612515822,duplicado_probable,"grupo -36.8211612,-73.0431313 piso 7"
+MLC2409023285,duplicado_probable,"grupo -36.8185322,-73.0485819 piso 1"
+MLC2400593631,duplicado_probable,"grupo -36.8484596,-73.0515468 piso 3"
+MLC4675565544,duplicado_probable,"grupo -36.820332,-73.0482853 piso 1"
+MLC4675577142,duplicado_probable,"grupo -36.820332,-73.0482853 piso 1"
+MLC2400640479,duplicado_probable,"grupo -36.8167317,-73.0541677 piso "
+MLC2102534125,duplicado_probable,"grupo -36.832233,-73.0444277 piso "
+MLC2217026241,duplicado_probable,"grupo -36.829754,-73.0461118 piso 22"
+MLC4102142116,duplicado_probable,"grupo -36.8455472,-73.0519303 piso 7"
+MLC4211820826,duplicado_probable,"grupo -36.8202034,-73.0625297 piso 3"
+MLC2274117343,duplicado_probable,"grupo -36.8204017,-73.0374117 piso 8"
+MLC4101738976,duplicado_probable,"grupo -36.8170914,-73.0529383 piso 4"
+MLC4542163014,duplicado_probable,"grupo -36.8181031,-73.0417667 piso 16"
+MLC2385034287,duplicado_probable,"grupo -36.8235306,-73.0460533 piso 11"
+MLC2098623041,duplicado_probable,"grupo -36.8149055,-73.049818 piso 17"
+MLC2394496195,duplicado_probable,"grupo -36.8181031,-73.0417667 piso 16"
+MLC2364319621,duplicado_probable,"grupo -36.8319421,-73.0592884 piso 5"
+MLC2105213497,duplicado_probable,"grupo -36.8253633,-73.0486536 piso 6"
+MLC2377252177,duplicado_probable,"grupo -36.8279209,-73.0427178 piso 9"
+MLC4313542654,duplicado_probable,"grupo -36.8142064,-73.0333608 piso "
+MLC2303264501,duplicado_probable,"grupo -36.8096711,-73.0419488 piso "
+MLC2327755003,duplicado_probable,"grupo -36.784124,-73.0462476 piso 3"
+MLC4497576564,duplicado_probable,"grupo -36.8169955,-73.0375212 piso 10"
+MLC1984840137,duplicado_probable,"grupo -36.8098965,-73.0594536 piso 3"
+MLC4437185750,duplicado_probable,"grupo -36.8098965,-73.0594536 piso 3"
+MLC2051013881,duplicado_probable,"grupo -36.812722,-73.0590784 piso 2"
+MLC2327754211,duplicado_probable,"grupo -36.8167317,-73.0541677 piso "
+MLC4649551286,duplicado_probable,"grupo -36.8118904,-73.0372533 piso 5"
+MLC2092646715,duplicado_probable,"grupo -36.8177014,-73.0460408 piso 2"
+MLC4223493682,duplicado_probable,"grupo -36.7827846,-73.0458996 piso "
+MLC2016093895,duplicado_probable,"grupo -36.8455472,-73.0519303 piso 7"
+MLC2005738285,duplicado_probable,"grupo -36.8056119,-73.064663 piso 3"
+MLC4100160560,duplicado_probable,"grupo -36.8282326,-73.0438053 piso 7"
+MLC4269928884,duplicado_probable,"grupo -36.8279209,-73.0427178 piso 9"
+MLC2094701535,duplicado_probable,"grupo -36.8172976,-73.0500266 piso 17"
+MLC4631458186,duplicado_probable,"grupo -36.7827846,-73.0458996 piso "
+MLC4427323732,duplicado_probable,"grupo -36.8096711,-73.0419488 piso "
+MLC2293682729,duplicado_probable,"grupo -36.8484596,-73.0515468 piso 3"
+MLC2246916111,duplicado_probable,"grupo -36.832233,-73.0444277 piso "
+MLC2061585285,duplicado_probable,"grupo -36.8172976,-73.0500266 piso 17"
+MLC4563764536,duplicado_probable,"grupo -36.8316664,-73.0493472 piso 11"
+MLC4461412204,duplicado_probable,"grupo -36.826472,-73.0423772 piso 3"
+MLC2228991525,duplicado_probable,"grupo -36.826472,-73.0423772 piso 3"
+MLC4602653028,duplicado_probable,"grupo -36.8173952,-73.0479298 piso 6"
+MLC2202287339,duplicado_probable,"grupo -36.8173952,-73.0479298 piso 6"
+MLC4120778962,duplicado_probable,"grupo -36.8173952,-73.0479298 piso 6"
+MLC2342046193,duplicado_probable,"grupo -36.8145817,-73.068118 piso 9"
+MLC4628702296,duplicado_probable,"grupo -36.8145817,-73.068118 piso 9"
+MLC2316050059,duplicado_probable,"grupo -36.8202034,-73.0625297 piso 17"
+MLC2169832945,duplicado_probable,"grupo -36.8440068,-73.0528554 piso 7"
+MLC4499775450,duplicado_probable,"grupo -36.8440068,-73.0528554 piso 7"
+MLC4130985996,duplicado_probable,"grupo -36.8216786,-73.0449024 piso 4"
+MLC2245056725,duplicado_probable,"grupo -36.8162393,-73.0531328 piso 6"
+MLC2281461497,duplicado_probable,"grupo -36.8162393,-73.0531328 piso 6"
+MLC2208869573,duplicado_probable,"grupo -36.8202034,-73.0625297 piso 17"
+MLC2031482941,duplicado_probable,"grupo -36.8162393,-73.0531328 piso 6"
+MLC4130985926,duplicado_probable,"grupo -36.8216786,-73.0449024 piso 4"
+MLC4656222408,duplicado_probable,"grupo -36.8177014,-73.0460408 piso 2"
+MLC2407980311,duplicado_probable,"grupo -36.8462972,-73.0951741 piso 6"
+MLC2407987123,duplicado_probable,"grupo -36.8433015,-73.0983886 piso 9"
+MLC2403600235,duplicado_probable,"grupo -36.8540299,-73.0955204 piso 2"
+MLC4211822562,duplicado_probable,"grupo -36.850695,-73.0936674 piso 10"
+MLC4343913864,duplicado_probable,"grupo -36.8575098,-73.1006471 piso 1"
+MLC2237662207,duplicado_probable,"grupo -36.850695,-73.0936674 piso 10"
+MLC4241423884,duplicado_probable,"grupo -36.8430132,-73.0988136 piso 9"
+MLC4627092560,duplicado_probable,"grupo -36.8428988,-73.0791205 piso 4"
+MLC4656244718,duplicado_probable,"grupo -36.8322707,-73.1096266 piso 2"
+MLC4100966086,duplicado_probable,"grupo -36.8367808,-73.1076889 piso 2"
+MLC3566200046,duplicado_probable,"grupo -36.8540299,-73.0955204 piso 2"
+MLC2177115213,duplicado_probable,"grupo -36.8462972,-73.0951741 piso 6"
+MLC2385023159,duplicado_probable,"grupo -36.8545554,-73.1371577 piso 2"
+MLC4576383084,duplicado_probable,"grupo -36.8408612,-73.0960297 piso 8"
+MLC2259887549,duplicado_probable,"grupo -36.8514862,-73.0791438 piso 6"
+MLC2265338339,duplicado_probable,"grupo -36.8485842,-73.0959051 piso 10"
+MLC4507152194,duplicado_probable,"grupo -36.8428988,-73.0791205 piso 4"
+MLC4490229690,duplicado_probable,"grupo -36.8322707,-73.1096266 piso 2"
+MLC2385033517,duplicado_probable,"grupo -36.8855768,-73.1497486 piso 4"
+MLC2394547051,duplicado_probable,"grupo -36.8408612,-73.0960297 piso 8"
+MLC2351297705,duplicado_probable,"grupo -36.8593848,-73.1428107 piso 2"
+MLC4499458658,duplicado_probable,"grupo -36.855808,-73.0926308 piso 8"
+MLC4101804450,duplicado_probable,"grupo -36.8480641,-73.0757791 piso "
+MLC2208669555,duplicado_probable,"grupo -36.8540788,-73.1030339 piso 3"
+MLC4313537916,duplicado_probable,"grupo -36.8514862,-73.0791438 piso 1"
+MLC4454846020,duplicado_probable,"grupo -36.8540788,-73.1030339 piso 3"
+MLC4213378684,duplicado_probable,"grupo -36.8289473,-73.1253055 piso 6"
+MLC4650538418,duplicado_probable,"grupo -36.8522744,-73.1334612 piso "
+MLC4523772672,duplicado_probable,"grupo -36.8345336,-73.1074088 piso 2"
+MLC2397596615,duplicado_probable,"grupo -36.8289473,-73.1253055 piso 6"
+MLC2006058505,duplicado_probable,"grupo -36.8345336,-73.1074088 piso 2"
+MLC2407947385,duplicado_probable,"grupo -36.9465021,-73.0171904 piso 2"
+MLC4572231054,duplicado_probable,"grupo -36.9007689,-73.0304596 piso 6"
+MLC2212123201,duplicado_probable,"grupo -36.8824489,-73.0370017 piso 2"
+MLC4496861238,duplicado_probable,"grupo -36.8614732,-73.0392803 piso 1"
+MLC2354619743,duplicado_probable,"grupo -36.8824489,-73.0370017 piso 2"
+MLC2259366539,duplicado_probable,"grupo -36.8614732,-73.0392803 piso 1"
+MLC4223493508,duplicado_probable,"grupo -36.9452807,-73.0218606 piso "
+MLC1988141941,duplicado_probable,"grupo -36.9007689,-73.0304596 piso 6"
+MLC2300660309,duplicado_probable,"grupo -36.900799,-73.0292564 piso 1"
+MLC4198201774,duplicado_probable,"grupo -36.900799,-73.0292564 piso 1"
+MLC4631471348,duplicado_probable,"grupo -36.9452807,-73.0218606 piso "
+MLC4139156670,duplicado_probable,"grupo -36.9465021,-73.0171904 piso 2"
+MLC2263573827,duplicado_probable,"grupo -36.8682821,-73.0425015 piso "
+MLC2383017691,duplicado_probable,"grupo -36.8824489,-73.0370017 piso 2"
+MLC2296556355,duplicado_probable,"grupo -37.4783537,-72.3517109 piso 4"
+MLC4631444850,duplicado_probable,"grupo -37.4933294,-72.3383218 piso "
+MLC2394051171,duplicado_probable,"grupo -37.4783537,-72.3517109 piso 4"
+MLC2049078009,duplicado_probable,"grupo -37.4788957,-72.3496602 piso "
+MLC4625366970,duplicado_probable,"grupo -37.4788957,-72.3496602 piso "
+MLC2017193145,duplicado_probable,"grupo -37.4933294,-72.3383218 piso "
+MLC4663200232,duplicado_probable,"grupo -36.7808161,-73.0800413 piso 2"
+MLC2223992607,duplicado_probable,"grupo -36.7816117,-73.0805779 piso 3"
+MLC2285768613,duplicado_probable,"grupo -36.7808161,-73.0800413 piso 2"
+MLC2061587083,duplicado_probable,"grupo -36.7816117,-73.0805779 piso 3"
+MLC4701925260,duplicado_probable,"grupo -36.8332501,-73.0549399 piso 23"
+MLC4693075214,duplicado_probable,"grupo -36.8149055,-73.049818 piso 17"
+MLC4708940578,duplicado_probable,"grupo -36.8211612,-73.0431313 piso 7"
+MLC2446129053,duplicado_probable,"grupo -36.8497483,-73.0509416 piso 17"
+MLC4705212474,duplicado_probable,"grupo -36.8168111,-73.0561151 piso 10"
+MLC2438511917,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 15"
+MLC2448564903,duplicado_probable,"grupo -36.8277268,-73.042633 piso 4"
+MLC4713097630,duplicado_probable,"grupo -36.7795277,-73.0425777 piso 1"
+MLC4716080518,duplicado_probable,"grupo -36.8501656,-73.0500852 piso 4"
+MLC2442667795,duplicado_probable,"grupo -36.8316664,-73.0493472 piso 11"
+MLC2434711515,duplicado_probable,"grupo -36.8222336,-73.0437332 piso 9"
+MLC4689480266,duplicado_probable,"grupo -36.8170914,-73.0529383 piso 4"
+MLC2327803929,duplicado_probable,"grupo -36.8118904,-73.0372533 piso 5"
+MLC4685867220,duplicado_probable,"grupo -36.8321427,-73.0521867 piso "
+MLC2432526403,duplicado_probable,"grupo -36.8216758,-73.0559144 piso "
+MLC4686931726,duplicado_probable,"grupo -36.8142064,-73.0333608 piso 3"
+MLC2430299765,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 17"
+MLC4696754044,duplicado_probable,"grupo -36.8314339,-73.0543976 piso "
+MLC4701937422,duplicado_probable,"grupo -36.8211612,-73.0431313 piso 7"
+MLC4694875362,duplicado_probable,"grupo -36.8167739,-73.0558088 piso 15"
+MLC2429562387,duplicado_probable,"grupo -36.8501656,-73.0500852 piso 4"
+MLC2419068557,duplicado_probable,"grupo -36.8500782,-73.0501762 piso "
+MLC2417155367,duplicado_probable,"grupo -36.8253633,-73.0486536 piso 6"
+MLC4688824718,duplicado_probable,"grupo -36.8484596,-73.0515468 piso "
+MLC4688977432,duplicado_probable,"grupo -36.8484596,-73.0515468 piso "
+MLC4690800770,duplicado_probable,"grupo -36.8168111,-73.0561151 piso 5"
+MLC4693076892,duplicado_probable,"grupo -36.812722,-73.0590784 piso 2"
+MLC4700990804,duplicado_probable,"grupo -36.8271127,-73.0443913 piso 5"
+MLC4685826536,duplicado_probable,"grupo -36.826696,-73.0534603 piso 3"
+MLC2419068789,duplicado_probable,"grupo -36.8500782,-73.0501762 piso "
+MLC2419094863,duplicado_probable,"grupo -36.8501656,-73.0500852 piso "
+MLC2419068687,duplicado_probable,"grupo -36.8268951,-73.0476533 piso "
+MLC2419068631,duplicado_probable,"grupo -36.8177868,-73.0545423 piso "
+MLC2443299671,duplicado_probable,"grupo -36.8185322,-73.0485819 piso 1"
+MLC4721894542,duplicado_probable,"grupo -36.8213335,-73.0536354 piso 21"
+MLC4712787692,duplicado_probable,"grupo -36.7838581,-73.0451044 piso "
+MLC2441380773,duplicado_probable,"grupo -36.7838581,-73.0451044 piso "
+MLC2448571053,duplicado_probable,"grupo -36.8142064,-73.0333608 piso "
+MLC2439251573,duplicado_probable,"grupo -36.8056119,-73.064663 piso "
+MLC2420366427,duplicado_probable,"grupo -36.8227754,-73.0391637 piso 3"
+MLC4698594100,duplicado_probable,"grupo -36.8202034,-73.0625297 piso 3"
+MLC4683820690,duplicado_probable,"grupo -36.784124,-73.0462476 piso 3"
+MLC4689078800,duplicado_probable,"grupo -36.8169955,-73.0375212 piso 10"
+MLC4716086322,duplicado_probable,"grupo -36.8335951,-73.0533473 piso 8"
+MLC2434754207,duplicado_probable,"grupo -36.8321495,-73.0522734 piso 13"
+MLC4602593354,duplicado_probable,"grupo -36.8282326,-73.0438053 piso 7"
+MLC4683096124,duplicado_probable,"grupo -36.8321495,-73.0522734 piso 13"
+MLC4723503576,duplicado_probable,"grupo -36.8335951,-73.0533473 piso 8"
+MLC2450341793,duplicado_probable,"grupo -36.7921893,-73.0355778 piso 1"
+MLC4724792964,duplicado_probable,"grupo -36.817148,-73.050131 piso "
+MLC2452891333,duplicado_probable,"grupo -36.817148,-73.050131 piso "
+MLC4714891566,duplicado_probable,"grupo -36.861533,-73.0951245 piso 1"
+MLC4721892164,duplicado_probable,"grupo -36.848586,-73.09535 piso "
+MLC4721334708,duplicado_probable,"grupo -36.848586,-73.09535 piso "
+MLC2443304419,duplicado_probable,"grupo -36.8367808,-73.1076889 piso 2"
+MLC4689032476,duplicado_probable,"grupo -36.8480641,-73.0757791 piso "
+MLC4555204530,duplicado_probable,"grupo -36.8514862,-73.0791438 piso 6"
+MLC2443298807,duplicado_probable,"grupo -36.8433015,-73.0983886 piso 9"
+MLC4715392114,duplicado_probable,"grupo -36.8593848,-73.1428107 piso 2"
+MLC4711677058,duplicado_probable,"grupo -36.8514862,-73.0791438 piso 1"
+MLC2450972249,duplicado_probable,"grupo -36.8545554,-73.1371577 piso 2"
+MLC2423102505,duplicado_probable,"grupo -36.8816316,-73.149216 piso 2"
+MLC4693711600,duplicado_probable,"grupo -36.855808,-73.0926308 piso 8"
+MLC2423332923,duplicado_probable,"grupo -36.8816316,-73.149216 piso 2"
+MLC4678475866,duplicado_probable,"grupo -36.8408612,-73.0960297 piso 8"
+MLC2433106039,duplicado_probable,"grupo -36.8448052,-73.0942906 piso 5"
+MLC4282253776,duplicado_probable,"grupo -36.8851426,-73.15002 piso 9"
+MLC4282253768,duplicado_probable,"grupo -36.8851426,-73.15002 piso 9"
+MLC4068274868,duplicado_probable,"grupo -36.8430132,-73.0988136 piso 9"
+MLC4694854786,duplicado_probable,"grupo -36.8448052,-73.0942906 piso 5"
+MLC2447494063,duplicado_probable,"grupo -36.8522744,-73.1334612 piso "
+MLC4724801560,duplicado_probable,"grupo -36.8855768,-73.1497486 piso 4"
+MLC2438103619,duplicado_probable,"grupo -36.901004,-73.030057 piso 5"
+MLC2141932489,duplicado_probable,"grupo -36.9007689,-73.0304596 piso 6"
+MLC4694876588,duplicado_probable,"grupo -36.901004,-73.030057 piso 5"
+MLC2440610181,duplicado_probable,"grupo -36.8682821,-73.0425015 piso "
+MLC2426522093,duplicado_probable,"grupo -36.7801073,-73.0799107 piso 3"
+MLC4691798504,duplicado_probable,"grupo -36.7801073,-73.0799107 piso 3"
