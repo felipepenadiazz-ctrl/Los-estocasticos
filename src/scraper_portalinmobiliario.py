@@ -40,7 +40,7 @@ import unicodedata
 import urllib.request
 import warnings
 from datetime import datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import unquote, urljoin, urlparse
 
 try:
     from bs4 import BeautifulSoup
@@ -178,11 +178,14 @@ REGIONES = {
 # El sitio muestra como maximo 42 paginas (unos 2.016 avisos) por busqueda
 MAX_PAGINAS_SITIO = 42
 
-# Senales de pagina de verificacion/bloqueo (solo se usan si falta el contenido esperado)
+# Senales de pagina de verificacion/bloqueo (solo se usan si falta el contenido esperado).
+# Ojo: las fichas normales cargan el script de reCAPTCHA, asi que "captcha" a secas no sirve
+# como senal: se busca el muro de verificacion de Mercado Libre ("captcha/wall").
 SENALES_BLOQUEO = (
-    "captcha", "account-verification", "verifica que eres", "no eres un robot",
-    "acceso denegado", "access denied", "too many requests",
+    "captcha/wall", "captcha-wall", "account-verification", "completa este paso",
+    "verifica que eres", "no eres un robot", "acceso denegado", "access denied", "too many requests",
 )
+URL_BLOQUEO = ("account-verification", "captcha/wall")
 
 
 class Bloqueado(Exception):
@@ -701,10 +704,28 @@ class Robots:
 # --------------------------------------------------------------------------
 # Navegacion
 # --------------------------------------------------------------------------
+def redirigio_fuera(url_final: str, id_aviso: str) -> bool:
+    """True si al abrir una ficha el sitio redirigio a otra pagina que no es el aviso.
+    Pasa con los avisos finalizados: el sitio manda a un listado (a veces detras del muro
+    de verificacion, con el listado en go_url). Si el muro apunta al propio aviso, no cuenta:
+    ese es un bloqueo real."""
+    digitos = re.sub(r"\D", "", id_aviso or "")
+    if not digitos or not url_final:
+        return False
+    if "redirectedfromvip" in url_final.lower():  # el sitio marca asi la redireccion desde la ficha
+        return True
+    destino = unquote(unquote(url_final.split("#", 1)[0]))
+    return not re.search(r"MLC-?" + digitos, destino, re.I)
+
+
 class Navegador:
-    def __init__(self, page, visible: bool, pausa_min: float, pausa_max: float):
+    def __init__(self, page, visible: bool, pausa_min: float, pausa_max: float,
+                 esperar_persona: bool = True):
         self.page, self.visible = page, visible
         self.pausa_min, self.pausa_max = pausa_min, pausa_max
+        # Con esperar_persona=False (opcion --desatendido) no se espera a que alguien resuelva
+        # la verificacion: se hace una pausa larga y se reintenta.
+        self.esperar_persona = esperar_persona
 
     def pausa(self, factor: float = 1.0):
         DETENER.wait(random.uniform(self.pausa_min, self.pausa_max) * factor)
@@ -723,7 +744,9 @@ class Navegador:
                 return html
         return None
 
-    def abrir(self, url: str, es_valida, intentos: int = 3) -> str | None:
+    def abrir(self, url: str, es_valida, intentos: int = 3, id_aviso: str | None = None) -> str | None:
+        """Devuelve el HTML de la pagina, o None si no existe (404/410 o, para una ficha con
+        id_aviso, si el sitio redirige fuera del aviso porque esta finalizado)."""
         for intento in range(1, intentos + 1):
             if DETENER.is_set():
                 return None
@@ -742,20 +765,22 @@ class Navegador:
                 return None
             if es_valida(html):
                 return html
+            if id_aviso and redirigio_fuera(self.page.url, id_aviso):
+                return None  # aviso finalizado: el sitio manda a un listado
             bajo = html.lower()
-            bloqueo = (estado in (403, 429) or "account-verification" in self.page.url
+            bloqueo = (estado in (403, 429) or any(s in self.page.url for s in URL_BLOQUEO)
                        or any(s in bajo for s in SENALES_BLOQUEO))
             if not bloqueo:
                 return html  # pagina sin el contenido esperado, pero sin bloqueo
-            if self.visible:
+            if self.visible and self.esperar_persona:
                 print(f"   ! El sitio pide una verificacion (HTTP {estado}). Resuelvela en la ventana del\n"
                       "     navegador: el scraper sigue solo apenas cargue la pagina (espera hasta 5 minutos).")
                 html = self._esperar_verificacion(es_valida)
                 if html is not None:
                     return html
             else:
-                espera = 60 * intento
-                print(f"   ! Posible bloqueo (HTTP {estado}). Esperando {espera} s...")
+                espera = (180 if self.visible else 60) * intento
+                print(f"   ! Posible bloqueo (HTTP {estado}, {self.page.url[:160]}). Esperando {espera} s...")
                 DETENER.wait(espera)
         if DETENER.is_set():
             return None
@@ -904,7 +929,7 @@ def etapa_fichas(nav, robots, archivo_urls, archivo_salida, archivo_descartados,
             if not robots.permitido(t["url"]):
                 print(f"[{i}/{len(pendientes)}] robots.txt no permite {t['url']}. Se omite.")
                 continue
-            html = nav.abrir(t["url"], ficha_valida)
+            html = nav.abrir(t["url"], ficha_valida, id_aviso=t["id_aviso"])
             if DETENER.is_set():
                 break
             if html is None or "publicacion finalizada" in normalizar(html[:300000]) or not ficha_valida(html):
@@ -963,16 +988,22 @@ def cargar_dataset(ruta: str = "departamentos_biobio.csv", expandir: bool = True
 def obtener_uf(uf_manual):
     if uf_manual:
         return float(uf_manual)
-    try:
-        req = urllib.request.Request("https://mindicador.cl/api/uf", headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=15) as r:
-            valor = float(json.load(r)["serie"][0]["valor"])
-        print(f"UF del dia (mindicador.cl): {valor:,.2f}")
-        return valor
-    except Exception:
-        print("! No se pudo obtener la UF desde mindicador.cl. Los avisos en pesos quedaran sin precio_uf.\n"
-              "  Puedes indicarla a mano con --uf <valor>.")
-        return None
+    fuentes = (
+        ("mindicador.cl", "https://mindicador.cl/api/uf", lambda d: d["serie"][0]["valor"]),
+        ("boostr.cl", "https://api.boostr.cl/economy/indicator/uf.json", lambda d: d["data"]["value"]),
+    )
+    for nombre, url, leer in fuentes:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                valor = float(leer(json.load(r)))
+            print(f"UF del dia ({nombre}): {valor:,.2f}")
+            return valor
+        except Exception:
+            continue
+    print("! No se pudo obtener la UF (mindicador.cl ni boostr.cl). Los avisos en pesos quedaran sin\n"
+          "  precio_uf. Puedes indicarla a mano con --uf <valor>.")
+    return None
 
 
 def construir_busquedas(args) -> list[tuple[str, str, str]]:
@@ -998,6 +1029,9 @@ def parse_args(argv=None):
     p.add_argument("--salida", default="departamentos_biobio.csv")
     p.add_argument("--uf", type=float, help="Valor de la UF para convertir precios en pesos")
     p.add_argument("--headless", action="store_true", help="No mostrar la ventana del navegador")
+    p.add_argument("--desatendido", action="store_true",
+                   help="Nadie mira la ventana: ante una verificacion no espera a una persona, "
+                        "hace pausas largas y reintenta")
     p.add_argument("--pausa-min", type=float, default=3.0, help="Segundos minimos entre paginas")
     p.add_argument("--pausa-max", type=float, default=7.0, help="Segundos maximos entre paginas")
     p.add_argument("--solo-urls", action="store_true", help="Solo etapa 1 (juntar links)")
@@ -1150,7 +1184,8 @@ def _scrapear(ctx, args, busquedas, archivo_urls, archivo_desc, uf):
         args.pausa_min = robots.crawl_delay
         args.pausa_max = max(args.pausa_max, robots.crawl_delay * 1.5)
 
-    nav = Navegador(page, visible=not args.headless, pausa_min=args.pausa_min, pausa_max=args.pausa_max)
+    nav = Navegador(page, visible=not args.headless, pausa_min=args.pausa_min, pausa_max=args.pausa_max,
+                    esperar_persona=not args.desatendido)
     try:
         if not args.solo_fichas:
             etapa_listados(nav, robots, busquedas, archivo_urls, args.max_paginas, args.incluir_proyectos)

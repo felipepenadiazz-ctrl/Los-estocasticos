@@ -50,12 +50,32 @@ python src/scraper_portalinmobiliario.py --comunas "concepcion,san pedro de la p
 | `--incluir-proyectos` | Incluir proyectos nuevos (por defecto se omiten). |
 | `--uf` | Valor de la UF a mano, si no se puede descargar de mindicador.cl. |
 | `--headless` | Correr sin ventana (más propenso a bloqueos). |
+| `--desatendido` | Para dejarlo corriendo solo: ante una verificación no espera a que una persona la resuelva; hace pausas largas (3, 6 y 9 minutos) y reintenta. |
 | `--salida` | Ruta del CSV (por defecto `departamentos_biobio.csv`). |
 
 ## Cómo funciona
 
 1. **Listados:** recorre las páginas de resultados de cada búsqueda y guarda el link y los datos básicos de cada aviso en `<salida>_urls.csv`. Las URLs de las páginas siguientes se leen desde el JSON que trae la página, porque los botones de paginación del sitio vienen sin link.
-2. **Fichas:** visita cada aviso pendiente y guarda una fila en `<salida>.csv`. Los avisos finalizados quedan en `<salida>_descartados.txt`.
+2. **Fichas:** visita cada aviso pendiente y guarda una fila en `<salida>.csv`, con todas las características de la ficha (ver `data/README.md`). Los avisos finalizados quedan en `<salida>_descartados.txt`.
+
+Un aviso finalizado no siempre muestra "Publicación finalizada": a veces el sitio redirige a un listado de Mercado Libre, a menudo detrás de su página de verificación, con `#redirectedFromVip=` en la URL. El scraper reconoce esa redirección (función `redirigio_fuera`) y descarta el aviso en vez de tratarlo como bloqueo. Las fichas normales cargan el script de reCAPTCHA, así que la palabra "captcha" sola no se usa como señal de bloqueo.
+
+Para completar las fichas de un índice de URLs ya existente, y sumar los avisos publicados desde entonces:
+
+```bash
+python src/scraper_portalinmobiliario.py --comunas "concepcion,san pedro de la paz,chiguayante,los angeles,talcahuano,hualpen,tome,penco,coronel" --solo-urls --salida data/raw/departamentos_biobio.csv
+python src/scraper_portalinmobiliario.py --solo-fichas --desatendido --salida data/raw/departamentos_biobio.csv
+```
+
+El valor de la UF se toma de mindicador.cl y, si no responde, de boostr.cl.
+
+## Auditoría de los datos
+
+`src/auditar_dataset.py` revisa el CSV (estructura, cobertura respecto del índice, completitud, tipos, rangos, coherencia entre columnas y duplicados probables) y escribe `docs/auditoria_datos.md`:
+
+```bash
+python src/auditar_dataset.py --datos data/raw/departamentos_biobio.csv --reporte docs/auditoria_datos.md
+```
 
 Todo se guarda a medida que avanza. Si se corta o se detiene (botón Stop en Jupyter o Ctrl+C), al volver a correr lo mismo sigue donde quedó. Si el CSV tiene columnas de una versión anterior del script, se renombra a `..._anterior_<fecha>.csv` y esos avisos se vuelven a visitar.
 
